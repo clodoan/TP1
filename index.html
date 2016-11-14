@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Trabajo Practico 1 </title>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style/style.css">
   </head>
@@ -11,60 +12,68 @@
     <header>
       <nav class="nav">
         <ul>
-          <li id="author"> Claudio Angrigiani </li>
+          <li id="logo"> Claudio Angrigiani </li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
 
-      <section class="principal">
-        <div class="content">
-          <img id="profile-pic"src="http://placehold.it/300x300">
+      <section id="principal">
+        <div class="titulo">
+          <img src="style/images/profile.png">
           <h1>Claudio Angrigiani</h1>
-          <h4>front end developer</h4>
+          <h3>front end developer</h3>
         </div>
       </section>
     </header>
 
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <ul>
-        <li>
-          <img src="http://placehold.it/300x260">
-        </li>
-        <li>
-          <img src="http://placehold.it/300x260">
-        </li>
-        <li>
-          <img src="http://placehold.it/300x260">
-        </li>
-        <li>
-          <img src="http://placehold.it/300x260">
-        </li>
-        <li>
-          <img src="http://placehold.it/300x260">
-        </li>
-        <li>
-          <img src="http://placehold.it/300x260">
-        </li>
-      </ul>
+    <section id="portfolio" class="section">
+      <h2 class=title>Portfolio</h2>
+        <div class="contenedor">
+            <div class="proyecto">
+              <img src="style/images/cabin.png">
+            </div>
+            <div class="proyecto">
+              <img src="style/images/cake.png">
+            </div>
+            <div class="proyecto">
+              <img src="style/images/circus.png">
+            </div>
+          </div>
+          <div class="contenedor">
+            <div class="proyecto">
+              <img src="style/images/game.png">
+            </div>
+            <div class="proyecto">
+              <img src="style/images/submarine.png">
+            </div>
+            <div class="proyecto">
+              <img src="style/images/safe.png">
+            </div>
+          </div>
     </section>
 
-    <section class="about" id="about">
-      <h2>About</h2>
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet, at usu nisl agam posse, cu omnium volumus ius. Sea ad dico maiorum antiopam, vim autem homero persequeris id. Mea id tempor fastidii forensibus, ex vix affert accusata consetetur, ad mel unum autem euismod. Per etiam sapientem ne, te falli placerat constituto eum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, at usu nisl agam posse, cu omnium volumus ius. Sea ad dico maiorum antiopam, vim autem homero persequeris id. Mea id tempor fastidii forensibus, ex vix affert accusata consetetur, ad mel unum autem euismod. Per etiam sapientem ne, te falli placerat constituto eum.
-        </p>
+    <section class="section" id="about">
+      <div class="about">
+        <h2 class="title"> About</h2>
+        <div class="parrafos">
+          <div class="parrafo1">
+            <p> Lorem ipsum dolor sit amet, at usu nisl agam posse, cu omnium volumus ius. Sea ad dico maiorum antiopam, vim autem homero persequeris id. Mea id tempor fastidii forensibus, ex vix affert accusata consetetur, ad mel unum autem euismod. Per etiam sapientem ne, te falli placerat constituto eum. Lorem ipsum dolor sit amet, at usu nisl agam posse, cu omnium volumus ius. Sea ad dico maiorum antiopam, vim autem homero persequeris id. Mea id tempor fastidii forensibus, ex vix affert accusata consetetur, ad mel unum autem euismod. Per etiam sapientem ne, te falli placerat constituto eum.
+            </p>
+          </div>
+          <div class="parrafo2">
+            <p>
+              Lorem ipsum dolor sit amet, at usu nisl agam posse, cu omnium volumus ius. Sea ad dico maiorum antiopam, vim autem homero persequeris id. Mea id tempor fastidii forensibus, ex vix affert accusata consetetur, ad mel unum autem euismod. Per etiam sapientem ne, te falli placerat constituto eum.
+              Lorem ipsum dolor sit amet, at usu nisl agam posse, cu omnium volumus ius. Sea ad dico maiorum antiopam, vim autem homero persequeris id. Mea id tempor fastidii forensibus, ex vix affert accusata consetetur, ad mel unum autem euismod. Per etiam sapientem ne, te falli placerat constituto eum.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact Me </h2>
+    <section class="section" id="contact">
+      <h2 class="title">Contact Me </h2>
       <form>
         <input type="text" placeholder="Name" required>
         <input type="email" placeholder="e-mail" required>
@@ -75,7 +84,7 @@
     </section>
 
     <footer>
-      <div class="social">
+      <div class="direccion">
         <span class="location">
           <h3>Location</h3>
           <p>
@@ -84,12 +93,12 @@
           </p>
         </span>
         <span class="social">
-          <ul>
-            <li><a href="http://facebook.com"></a>f</li>
-            <li><a href="http://google.com"></a>g</li>
-            <li><a href="http://twitter.com"></a>t</li>
-            <li><a href="http://linkedin.com"></a>l</li>
-            <li><a href="http://dribble.com"></a>d</li>
+          <ul class="iconos">
+            <li><a href="http://facebook.com"></a><i class="ion-social-facebook"></i></li>
+            <li><a href="http://google.com"></a><i class="ion-social-googleplus"></i></li>
+            <li><a href="http://twitter.com"></a><i class="ion-social-twitter"></i></li>
+            <li><a href="http://linkedin.com"></a><i class="ion-social-linkedin"></i></li>
+            <li><a href="http://dribble.com"></a><i class="ion-social-dribbble-outline"></i></li>
           </ul>
         </span>
       </div>
